@@ -1,0 +1,26 @@
+---
+description: An accordion component.
+labels: ['accordion', 'react']
+---
+
+import { Accordion } from './accordion';
+import { Item } from '@robbywh/cross-platform.api.accordion';
+
+A React Native accordion that renders a list.
+
+### Component usage
+
+- Pass an array of [`Items`](http://bit.cloud/learnbit-react.web-mobile-design-system/api/accordion). This is the common API for the definition of elements to render.
+- It will render those elements as a list when passed under the `elementList` prop.
+- It consumes a Theme from [`@learnbit-react/web-mobile-design-system.theme.mobile`](http://bit.cloud/learnbit-react.web-mobile-design-system/theme/mobile)
+
+```js live
+() => {
+  const colorsList = [
+    ['Red', '01'],
+    ['Blue', '02'],
+    ['Green', '03'],
+  ].map((color) => new Item(color[0], color[1]).toObject());
+  return <Accordion elementList={colorsList} />;
+};
+```

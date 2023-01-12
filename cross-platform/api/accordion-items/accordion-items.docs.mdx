@@ -1,0 +1,24 @@
+---
+description: A component that provides items for the accordion
+labels: ['items', 'accordion']
+---
+
+import { accordionItems } from './accordion-items';
+
+An array of elements to be rendered.
+
+```js live
+() => {
+  return (
+    <>
+      {accordionItems.map((e) => (
+        <div key={e.id}>
+          <div>id: {e.id}</div>
+          <div>title: {e.title}</div>
+          <div style={{ borderBottom: '1px solid gray', width: '100%' }} />
+        </div>
+      ))}
+    </>
+  );
+};
+```

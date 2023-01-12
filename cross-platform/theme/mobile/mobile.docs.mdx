@@ -1,0 +1,20 @@
+---
+description: A Theme component.
+labels: ['theme', 'react native']
+---
+
+import { useTheme } from './mobile';
+import { View } from 'react-native';
+
+A Theme Provider and a hook that provides the design tokens for React Native.
+
+### Component usage
+
+You can use useTheme hook inside the component:
+
+```js live
+() => {
+  const theme = useTheme();
+  return <View style={{ color: theme.primaryColor }}>Hello World</View>;
+};
+```

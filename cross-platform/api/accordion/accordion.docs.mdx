@@ -1,0 +1,17 @@
+---
+description: A component that shares definitions to use across platforms.
+labels: ['definitions', 'accordion']
+---
+
+import { Item } from './accordion';
+
+The Item entity component is used to represent an Item.
+
+This is the type of data it returns:
+
+```js live
+() => {
+  const manchester = new Item('Manchester', 'AAA-001');
+  return <>{JSON.stringify(manchester)}</>;
+};
+```

@@ -1,0 +1,30 @@
+---
+description: 'A React Hook that increments a count by 1 each time it is called.'
+labels: ['hook', 'counter']
+---
+
+import { useSelect } from './use-select';
+
+## A React Hook to store a selected element
+
+Store the element in `selectedId`.
+
+Use `setSelection` to update the value.
+
+### Component usage
+
+In this example clicking the button calls `setSelection` which stores a new ID
+
+```js live
+() => {
+  const { selectedId, setSelection } = useSelect();
+  return (
+    <>
+      <h1>
+        {selectedId ? `The selected id is: ${selectedId}` : 'No id Selected'}
+      </h1>
+      <button onClick={() => setSelection(Math.floor(Math.random()*10000000))}>Select random Id</button>
+    </>
+  );
+};
+```

@@ -1,0 +1,28 @@
+---
+description: 'A React Hook that stores an open / close state'
+labels: ['hook', 'open', 'close']
+---
+
+import { useOpen } from './use-open';
+
+## A React Hook to handle an open / close status
+
+### Component usage
+
+Run toggleOpen to change the status of isOpen
+
+In this example clicking the button calls `toggleOpen` which flips the isOpen boolean.
+
+```js live
+() => {
+  const { isOpen, toggleOpen } = useOpen();
+  return (
+    <>
+      The isOpen status is {isOpen.toString()}
+      
+        Change Status
+      
+    </>
+  );
+};
+```

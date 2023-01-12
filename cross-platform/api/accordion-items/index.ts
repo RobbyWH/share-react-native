@@ -1,0 +1,1 @@
+export { accordionItems } from './accordion-items';
