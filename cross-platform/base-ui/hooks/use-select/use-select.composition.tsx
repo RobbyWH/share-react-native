@@ -7,6 +7,7 @@ export type Teams = {
   team: string;
 };
 
+
 export const BasicUseSelect = () => {
   const teams: Teams[] = [
     { id: '01', team: 'Los Angeles Lakers' },
@@ -35,3 +36,4 @@ export const BasicUseSelect = () => {
     </div>
   );
 };
+

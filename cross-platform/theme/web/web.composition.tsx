@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeProvider, useTheme } from './web';
-
 export const BasicThemeComposed = () => {
   const myStyle = {
     color: 'var(--primary-color)',

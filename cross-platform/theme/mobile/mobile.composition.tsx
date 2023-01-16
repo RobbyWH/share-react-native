@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { useTheme } from './mobile';
 
+
 export const BasicThemeComposed = () => {
   const theme = useTheme();
   const {
